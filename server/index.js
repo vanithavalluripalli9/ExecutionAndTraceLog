@@ -35,7 +35,8 @@ var options = {
         }
     },
     swaggerUI : {
-        swaggerUIPath: '/eatl/docs'
+        swaggerUIPath: '/eatl/docs',
+        apiDocsPath: '/eatl/api-docs'
     }
 };
 
