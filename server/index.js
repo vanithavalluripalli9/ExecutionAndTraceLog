@@ -4,7 +4,7 @@ var path = require('path');
 var http = require('http');
 
 var oas3Tools = require('oas3-tools');
-var serverPort = 3002;
+var serverPort = 3012;
 
 const authorizingService = require('onf-core-model-ap-bs/basicServices/AuthorizingService');
 const operationServerInterface = require('onf-core-model-ap/applicationPattern/onfModel/models/layerProtocols/OperationServerInterface');
@@ -35,7 +35,7 @@ var options = {
         }
     },
     swaggerUI : {
-        swaggerUIPath: '/ro/docs'
+        swaggerUIPath: '/eatl/docs'
     }
 };
 
