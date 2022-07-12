@@ -2,8 +2,11 @@ openapi: 3.0.0
 info:
   title: ExecutionAndTraceLog
   version: 0.0.2
+servers:
+- url: /eatl
+  description: Initial deployment
 paths:
-  /eatl/v1/bequeath-your-data-and-die:
+  /v1/bequeath-your-data-and-die:
     post:
       tags:
       - IndividualServices
@@ -2720,7 +2723,7 @@ paths:
       security:
       - apiKeyAuth: []
       x-swagger-router-controller: IndividualServices
-  /eatl/v1/start-application-in-generic-representation:
+  /v1/start-application-in-generic-representation:
     post:
       tags:
       - IndividualServices
@@ -3049,7 +3052,7 @@ paths:
       security:
       - apiKeyAuth: []
       x-swagger-router-controller: IndividualServices
-  /eatl/v1/regard-application:
+  /v1/regard-application:
     post:
       tags:
       - IndividualServices
@@ -3687,7 +3690,7 @@ paths:
       security:
       - apiKeyAuth: []
       x-swagger-router-controller: IndividualServices
-  /eatl/v1/disregard-application:
+  /v1/disregard-application:
     post:
       tags:
       - IndividualServices
@@ -4019,7 +4022,7 @@ paths:
       security:
       - apiKeyAuth: []
       x-swagger-router-controller: IndividualServices
-  /eatl/v1/list-applications:
+  /v1/list-applications:
     post:
       tags:
       - IndividualServices
@@ -4362,7 +4365,7 @@ paths:
       security:
       - apiKeyAuth: []
       x-swagger-router-controller: IndividualServices
-  /eatl/v1/record-service-request:
+  /v1/record-service-request:
     post:
       tags:
       - IndividualServices
@@ -4693,7 +4696,7 @@ paths:
       security:
       - apiKeyAuth: []
       x-swagger-router-controller: IndividualServices
-  /eatl/v1/list-records:
+  /v1/list-records:
     post:
       tags:
       - IndividualServices
@@ -5048,7 +5051,7 @@ paths:
       security:
       - apiKeyAuth: []
       x-swagger-router-controller: IndividualServices
-  /eatl/v1/list-records-of-flow:
+  /v1/list-records-of-flow:
     post:
       tags:
       - IndividualServices
@@ -5411,7 +5414,7 @@ paths:
       security:
       - apiKeyAuth: []
       x-swagger-router-controller: IndividualServices
-  /eatl/v1/list-records-of-unsuccessful:
+  /v1/list-records-of-unsuccessful:
     post:
       tags:
       - IndividualServices
@@ -5755,7 +5758,7 @@ paths:
       security:
       - apiKeyAuth: []
       x-swagger-router-controller: IndividualServices
-  /eatl/v1/register-yourself:
+  /v1/register-yourself:
     post:
       tags:
       - BasicServices
@@ -6401,7 +6404,7 @@ paths:
       security:
       - apiKeyAuth: []
       x-swagger-router-controller: BasicServices
-  /eatl/v1/embed-yourself:
+  /v1/embed-yourself:
     post:
       tags:
       - BasicServices
@@ -7034,7 +7037,7 @@ paths:
       security:
       - apiKeyAuth: []
       x-swagger-router-controller: BasicServices
-  /eatl/v1/redirect-service-request-information:
+  /v1/redirect-service-request-information:
     post:
       tags:
       - BasicServices
@@ -7708,7 +7711,7 @@ paths:
       security:
       - apiKeyAuth: []
       x-swagger-router-controller: BasicServices
-  /eatl/v1/redirect-oam-request-information:
+  /v1/redirect-oam-request-information:
     post:
       tags:
       - BasicServices
@@ -8367,7 +8370,7 @@ paths:
       security:
       - apiKeyAuth: []
       x-swagger-router-controller: BasicServices
-  /eatl/v1/end-subscription:
+  /v1/end-subscription:
     post:
       tags:
       - BasicServices
@@ -8698,7 +8701,7 @@ paths:
       security:
       - apiKeyAuth: []
       x-swagger-router-controller: BasicServices
-  /eatl/v1/inquire-oam-request-approvals:
+  /v1/inquire-oam-request-approvals:
     post:
       tags:
       - BasicServices
@@ -9375,7 +9378,7 @@ paths:
       security:
       - apiKeyAuth: []
       x-swagger-router-controller: BasicServices
-  /eatl/v1/update-client:
+  /v1/update-client:
     post:
       tags:
       - BasicServices
@@ -9706,7 +9709,7 @@ paths:
       security:
       - apiKeyAuth: []
       x-swagger-router-controller: BasicServices
-  /eatl/v1/list-ltps-and-fcs:
+  /v1/list-ltps-and-fcs:
     post:
       tags:
       - BasicServices
@@ -10035,7 +10038,7 @@ paths:
       security:
       - apiKeyAuth: []
       x-swagger-router-controller: BasicServices
-  /eatl/v1/redirect-topology-change-information:
+  /v1/redirect-topology-change-information:
     post:
       tags:
       - BasicServices
@@ -14427,7 +14430,7 @@ paths:
       security:
       - apiKeyAuth: []
       x-swagger-router-controller: BasicServices
-  /eatl/v1/update-operation-key:
+  /v1/update-operation-key:
     post:
       tags:
       - BasicServices
@@ -14758,7 +14761,7 @@ paths:
       security:
       - apiKeyAuth: []
       x-swagger-router-controller: BasicServices
-  /eatl/v1/update-operation-client:
+  /v1/update-operation-client:
     post:
       tags:
       - BasicServices
@@ -15090,7 +15093,7 @@ paths:
       security:
       - apiKeyAuth: []
       x-swagger-router-controller: BasicServices
-  /eatl/v1/inform-about-application:
+  /v1/inform-about-application:
     post:
       tags:
       - BasicServices
@@ -15345,7 +15348,7 @@ paths:
               schema:
                 $ref: '#/components/schemas/errorDescription'
       x-swagger-router-controller: BasicServices
-  /eatl/v1/inform-about-application-in-generic-representation:
+  /v1/inform-about-application-in-generic-representation:
     post:
       tags:
       - BasicServices
@@ -15600,7 +15603,7 @@ paths:
               schema:
                 $ref: '#/components/schemas/errorDescription'
       x-swagger-router-controller: BasicServices
-  /eatl/v1/inform-about-release-history:
+  /v1/inform-about-release-history:
     post:
       tags:
       - BasicServices
@@ -15863,7 +15866,7 @@ paths:
               schema:
                 $ref: '#/components/schemas/errorDescription'
       x-swagger-router-controller: BasicServices
-  /eatl/v1/inform-about-release-history-in-generic-representation:
+  /v1/inform-about-release-history-in-generic-representation:
     post:
       tags:
       - BasicServices
